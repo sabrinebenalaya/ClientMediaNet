@@ -1,0 +1,29 @@
+/* bouton */
+
+.my-card .button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete-button, .all-button {
+    background-color: #0056b3; /* Bleu primaire */
+    color: #fff; /* Texte blanc */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Effet 3D */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition pour l'effet au survol */
+}
+
+ .all-button:hover, .delete-button:hover {
+   
+    transform: translateY(-2px); 
+ }
+
+.delete-button:active , .all-button:active {
+    background-color: #fff; /* Fond blanc lorsqu'il est activé (clic) */
+    transform: translateY(0); /* Annuler l'effet de décalage au clic */
+}
+
